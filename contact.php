@@ -22,17 +22,8 @@
 			$text = $_POST['text'];
 
 			if (!empty($name) && !empty($mail) && !empty($text)) {
-				$to = 'bosyouseeme@gmail.com';
-				$subject = 'Contact form submitted';
-				$body = $name."\n".$text;
-				$headers = 'From: '.$mail;
 				
-				
-
 				connDB();
-				//$query    = "SELECT * FROM Contact_Tabel ORDER BY 'id' ";
-				/*$query    = "INSERT INTO Contact_Tabel (name, mail, tekst) 
-             					VALUES('OkJ', 'jg', 'hj')";*/
 				
 				$query    = "INSERT INTO Contact_Tabel (name, mail, tekst) 
              					VALUES('$name', '$mail', '$text')";
