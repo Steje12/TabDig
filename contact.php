@@ -15,7 +15,7 @@
 		include_once('assets/inc/contact_hand.php');
 		
 		
-		
+		//SÅDAN JO!!!
 		if (isset($_POST['name']) && isset($_POST['mail']) && isset($_POST['text'])) {
 			$name = $_POST['name'];
 			$mail = $_POST['mail'];
